@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* utils */
+body {
+  @apply font-josefin;
+}
+
 .grid {
   grid-auto-flow: row dense;
   grid-auto-rows: minmax(180px, auto);

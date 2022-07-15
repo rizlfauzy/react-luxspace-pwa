@@ -261,7 +261,9 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      josefin: ['"Josefin Sans"'],
       sans: [
+        '"Josefin Sans"',
         "ui-sans-serif",
         "system-ui",
         "-apple-system",

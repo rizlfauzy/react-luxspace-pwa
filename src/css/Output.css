@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap");
 
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
@@ -42,7 +42,7 @@ html {
   /* 3 */
   tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Josefin Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -616,10 +616,6 @@ video {
   right: 0px;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .left-0{
   left: 0px;
 }
@@ -628,24 +624,28 @@ video {
   top: 0px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .z-50{
   z-index: 50;
 }
 
-.z-20{
-  z-index: 20;
+.z-40{
+  z-index: 40;
 }
 
 .z-10{
   z-index: 10;
 }
 
-.z-30{
-  z-index: 30;
+.z-20{
+  z-index: 20;
 }
 
-.z-40{
-  z-index: 40;
+.z-30{
+  z-index: 30;
 }
 
 .col-span-9{
@@ -661,19 +661,14 @@ video {
   margin-right: auto;
 }
 
-.mx-3{
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .-mx-4{
   margin-left: -1rem;
   margin-right: -1rem;
+}
+
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .my-4{
@@ -681,16 +676,9 @@ video {
   margin-bottom: 1rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mt-16{
@@ -701,8 +689,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .block{
@@ -725,6 +725,10 @@ video {
   display: none;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .h-8{
   height: 2rem;
 }
@@ -735,10 +739,6 @@ video {
 
 .h-16{
   height: 4rem;
-}
-
-.h-0{
-  height: 0px;
 }
 
 .min-h-screen{
@@ -769,12 +769,12 @@ video {
   width: 4rem;
 }
 
-.flex-none{
-  flex: none;
-}
-
 .flex-auto{
   flex: 1 1 auto;
+}
+
+.flex-none{
+  flex: none;
 }
 
 .grid-cols-9{
@@ -817,12 +817,12 @@ video {
   overflow-x: hidden;
 }
 
-.rounded-full{
-  border-radius: 9999px;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .border-t{
@@ -838,9 +838,9 @@ video {
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
 }
 
-.bg-white{
+.bg-gray-100{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
 .bg-pink-400{
@@ -848,14 +848,14 @@ video {
   background-color: rgb(249 202 218 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-35{
@@ -882,9 +882,34 @@ video {
   padding: 0px;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-5{
@@ -897,39 +922,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-56{
@@ -948,21 +948,6 @@ video {
   text-align: center;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -971,6 +956,21 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold{
@@ -1015,6 +1015,10 @@ video {
 }
 
 /* utils */
+
+body{
+  font-family: "Josefin Sans";
+}
 
 .grid {
   grid-auto-flow: row dense;
@@ -1316,8 +1320,12 @@ button[disabled]:hover{
     height: auto;
   }
 
-  .md\:w-1\/2{
-    width: 50%;
+  .md\:w-2\/12{
+    width: 16.666667%;
+  }
+
+  .md\:w-3\/12{
+    width: 25%;
   }
 
   .md\:w-88{
@@ -1328,12 +1336,8 @@ button[disabled]:hover{
     width: auto;
   }
 
-  .md\:w-2\/12{
-    width: 16.666667%;
-  }
-
-  .md\:w-3\/12{
-    width: 25%;
+  .md\:w-1\/2{
+    width: 50%;
   }
 
   .md\:flex-initial{
@@ -1365,14 +1369,14 @@ button[disabled]:hover{
     padding-bottom: 0px;
   }
 
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pb-56{
