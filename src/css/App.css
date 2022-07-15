@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-item {
+  @apply text-sm inline-block w-[calc(100%/4)] text-center py-2.5 text-dark [&:not(:last-child)]:border-r [&:not(:last-child)]:border-r-[#eee];
+}
+
+.section {
+  @apply p-[30px];
+}
+.section .section-title {
+  @apply font-bold text-dark text-2xl mb-5;
+}
+.section .section-description {
+  @apply leading-6.5;
+}
+.section .section-list {
+  @apply mb-5 list-disc ml-10;
+}
+
+.article {
+  @apply border-b border-b-[#eee] py-5;
+}
+.article .article-title {
+  @apply text-dark text-xl font-bold;
+}
+.article .article-title a {
+  @apply text-dark text-xl font-bold hover:text-sky-400;
+}
+.article .article-time {
+  @apply text-[#999] text-[12px];
+}
+
+/*# sourceMappingURL=App.css.map */

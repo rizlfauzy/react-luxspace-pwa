@@ -24,6 +24,9 @@
     "workbox-streams": "^6.5.3"
   },
   "scripts": {
+    "scss": "sass --watch src/scss/style.scss:src/css/App.css",
+    "tailwindcss": "npx tailwindcss init",
+    "run-tailwind": "npx tailwindcss -i ./src/css/App.css -o ./src/css/Output.css --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
