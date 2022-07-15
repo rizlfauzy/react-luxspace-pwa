@@ -27,6 +27,7 @@
     "scss": "sass --watch src/scss/style.scss:src/css/App.css",
     "tailwindcss": "npx tailwindcss init",
     "run-tailwind": "npx tailwindcss -i ./src/css/App.css -o ./src/css/Output.css --watch",
+    "front-end": "npm-run-all --parallel scss run-tailwind",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.1.6"
   }
 }
