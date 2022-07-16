@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 /* utils */
-body {
-  @apply font-josefin;
-}
-
 .grid {
   grid-auto-flow: row dense;
   grid-auto-rows: minmax(180px, auto);
