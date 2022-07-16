@@ -8,11 +8,13 @@ import AsideMenu from "./components/layouts/AsideMenu";
 import Footer from "./components/layouts/Footer";
 import "./css/Output.css";
 import OfflineAlert from "./components/layouts/OfflineAlert";
+import Splash from "./components/layouts/Splash";
 
 function App() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [offlineStatus, setOfflineStatus] = useState(!navigator.onLine);
+  const [isLoading,setIsLoading]=useState(true);
 
   const handleOffline = () => setOfflineStatus(!navigator.onLine);
 
@@ -32,27 +34,38 @@ function App() {
       script.src = "./js/carousel.js";
       script.async = false
       document.body.appendChild(script);
+      console.log(script);
 
       handleOffline();
       window.addEventListener("online", handleOffline);
       window.addEventListener("offline", handleOffline);
 
+      const cto = setTimeout(() => setIsLoading(false), 1500);
+
       return () => {
         window.removeEventListener("online", handleOffline);
         window.removeEventListener("offline", handleOffline);
+
+        clearTimeout(cto);
       }
     })()
-  },[offlineStatus])
+  },[offlineStatus,isLoading]);
   return (
     <>
-      {offlineStatus && <OfflineAlert />}
-      <Header />
-      <Hero />
-      <Browse />
-      <Arrived items={items} loading={loading} />
-      <Clients />
-      <AsideMenu />
-      <Footer />
+      {isLoading ? (
+        <Splash />
+      ) : (
+        <>
+          {offlineStatus && <OfflineAlert />}
+          <Header />
+          <Hero />
+          <Browse />
+          <Arrived items={items} loading={loading} />
+          <Clients />
+          <AsideMenu />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
