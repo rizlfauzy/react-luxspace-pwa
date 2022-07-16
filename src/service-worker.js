@@ -50,7 +50,7 @@ registerRoute(
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  ({ url }) => url.origin === self.location.origin && /\.(jpe?g|png|svg|ico|json)$/i.test(url.pathname), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+  ({ url }) => url.origin === self.location.origin && /\.(jpe?g|png|svg|ico)$/i.test(url.pathname), // Customize this strategy as needed, e.g., by changing to CacheFirst.
   new StaleWhileRevalidate({
     cacheName: "images",
     plugins: [
@@ -86,9 +86,9 @@ registerRoute(
 );
 
 registerRoute(
-  ({ url }) => /\.(jpe?g|png)$/i.test(url.pathname),
+  ({ url }) => /\.(jpe?g|png|js|json)$/i.test(url.pathname),
   new StaleWhileRevalidate({
-    cacheName: "api-image",
+    cacheName: "api-image-and-sw-files",
     plugins: [new ExpirationPlugin({
       maxAgeSeconds: 360, // 360 second
       maxEntries: 30,
